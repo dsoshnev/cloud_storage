@@ -1,0 +1,35 @@
+Tue Oct 06 15:48:20 MSK 2020: auth service is started
+Tue Oct 06 15:48:25 MSK 2020: server is started at /127.0.0.1:8189
+Tue Oct 06 15:48:41 MSK 2020: client /127.0.0.1:60857 connected at Tue Oct 06 15:48:41 MSK 2020
+Tue Oct 06 15:48:41 MSK 2020: client /127.0.0.1:60859 connected at Tue Oct 06 15:48:41 MSK 2020
+Tue Oct 06 15:48:41 MSK 2020: client /127.0.0.1:60858 connected at Tue Oct 06 15:48:41 MSK 2020
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): AuthCommand{userData='UserData{login='login2', password='***', username='null', homeDir='/login2/'}'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): AuthCommand{userData='UserData{login='login2', password='***', username='null', homeDir='/login2/'}'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): AuthCommand{userData='UserData{login='login3', password='***', username='null', homeDir='/login3/'}'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): AuthCommand{userData='UserData{login='login3', password='***', username='null', homeDir='/login3/'}'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): StorageCommand{type='LS'params='[., ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): StorageCommand{type='LS'params='[., ]'results='[login1forDownload.txt]'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): StorageCommand{type='LS'params='[., ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): StorageCommand{type='LS'params='[., ]'results='[login2forDownload.txt]'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): StorageCommand{type='DOWNLOAD'params='[login1forDownload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): StorageCommand{type='LS'params='[., ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): StorageCommand{type='LS'params='[., ]'results='[login3forDownload.txt]'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): StorageCommand{type='UPLOAD'params='[login2forUpload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): StorageCommand{type='UPLOAD'params='[login3forUpload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0xc016db9e, L:/127.0.0.1:8189 - R:/127.0.0.1:60858]): Command{type='END'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): StorageCommand{type='DOWNLOAD'params='[login3forDownload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: client /127.0.0.1:60858 disconnected at Tue Oct 06 15:48:42 MSK 2020
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): StorageCommand{type='DOWNLOAD'params='[login2forDownload.txt, ]'results='[]'}
+Tue Oct 06 15:48:42 MSK 2020: send: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): ErrorCommand{error='command not supported'}
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x93943505, L:/127.0.0.1:8189 - R:/127.0.0.1:60859]): Command{type='END'}
+Tue Oct 06 15:48:42 MSK 2020: client /127.0.0.1:60859 disconnected at Tue Oct 06 15:48:42 MSK 2020
+Tue Oct 06 15:48:42 MSK 2020: read: ChannelHandlerContext(ServerHandler#0, [id: 0x457d4856, L:/127.0.0.1:8189 - R:/127.0.0.1:60857]): Command{type='END'}
+Tue Oct 06 15:48:42 MSK 2020: client /127.0.0.1:60857 disconnected at Tue Oct 06 15:48:42 MSK 2020

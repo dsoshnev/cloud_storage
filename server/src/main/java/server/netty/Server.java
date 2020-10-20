@@ -1,15 +1,14 @@
 package server.netty;
 
-import common.Command;
-import common.FileUtility;
-import common.UserData;
+import common.*;
+import common.netty.*;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import common.netty.CommandDecoder;
-import common.netty.CommandEncoder;
+
+import io.netty.handler.stream.ChunkedWriteHandler;
 import server.AuthService;
 import server.BaseAuthService;
 import server.LogService;
@@ -56,8 +55,13 @@ public class Server {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
                     ch.pipeline().addLast(
-                            new CommandEncoder(),
-                            new CommandDecoder(),
+                            new ProtocolEncoder(),
+                            new ProtocolDecoder(),
+                            //new ObjectEncoder(),
+                            //new ObjectDecoder(ClassResolvers.cacheDisabled(null)),
+                            //new CommandEncoder(),
+                            //new CommandDecoder(),
+                            new ChunkedWriteHandler(),
                             serverHandler
                     );
                 }

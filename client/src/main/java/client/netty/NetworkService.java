@@ -1,16 +1,9 @@
 package client.netty;
 
-import client.io.CommandHandler;
-import common.Command;
-import common.CommandType;
-import common.UserData;
-import common.netty.CommandDecoder;
-import common.netty.CommandEncoder;
+import common.*;
+import common.netty.*;
 import io.netty.bootstrap.Bootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
@@ -47,18 +40,23 @@ public class NetworkService {
     public void run() throws InterruptedException {
 
         Bootstrap b = new Bootstrap();
-        b.group(this.workerGroup)
-                .channel(NioSocketChannel.class)
-                .option(ChannelOption.SO_KEEPALIVE, true)
-                .handler(new ChannelInitializer<SocketChannel>() {
-                    @Override
-                    public void initChannel(SocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(
-                                new CommandDecoder(),
-                                new CommandEncoder(),
-                                new ClientHandler(init()));
-                    }
-                });
+        b.group(this.workerGroup);
+        b.channel(NioSocketChannel.class);
+        b.option(ChannelOption.SO_KEEPALIVE, true);
+        b.handler(new ChannelInitializer<SocketChannel>() {
+            @Override
+            public void initChannel(SocketChannel ch) throws Exception {
+                ch.pipeline().addLast(
+                        new ProtocolDecoder(),
+                        new ProtocolEncoder(),
+                        //new ObjectEncoder(),
+                        //new ObjectDecoder(ClassResolvers.cacheDisabled(null)),
+                        //new ChunkedFileClientHandler(),
+                        //new CommandDecoder(),
+                        //new CommandEncoder(),
+                        new ClientHandler(init()));
+            }
+        });
 
         // Start the client.
         this.channel = b.connect(host, port).sync().channel();
@@ -70,14 +68,6 @@ public class NetworkService {
 
     public synchronized void setUserData(UserData userData) {
         this.userData = userData;
-    }
-
-    public synchronized void subscribe(CommandHandler handler) {
-        //TODO
-    }
-
-    public synchronized void unsubscribe(CommandHandler handler) {
-        //TODO
     }
 
     public void sendAuthCommand(String login, String password) throws IOException {
@@ -97,8 +87,31 @@ public class NetworkService {
         printInfo("send: %s%n", command);
     }
 
-    public void readCommand(Command command) {
-        printInfo("read: %s%n", command);
+    public void readCommand(ChannelHandlerContext ctx, Command command) {
+        try {
+            printInfo("read: %s%n", command);
+            if (command != null) {
+                switch (command.getType()) {
+                    case END:
+                        System.out.println("do end!");
+                        break;
+                    case AUTH:
+                        System.out.println("do auth!");
+                        break;
+                    case UPLOAD:
+                        StorageCommand sCommand = (StorageCommand) command;
+                        System.out.println("do upload!");
+                        FileDecoder fileDecoder = new FileDecoder(sCommand.getLongResult1(), sCommand.getParam1());
+                        ctx.pipeline().addFirst("filedecoder", fileDecoder);
+                        //ctx.writeAndFlush( CommonClientDefines.READY_FOR_CONTENT)
+                        break;
+                    default:
+                        break;
+                }
+            }
+        } catch (IOException e) {
+            printError("IOException %s%n", e.getMessage());
+        }
     }
 
     public void shutdown() throws InterruptedException {

@@ -1,8 +1,14 @@
 package client.netty;
 
+import common.AuthCommand;
 import common.Command;
+import common.StorageCommand;
+import common.netty.FileDecoder;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.stream.ChunkedFile;
+
+import java.io.File;
 
 public class ClientHandler extends ChannelInboundHandlerAdapter {
 
@@ -14,15 +20,16 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
+        System.out.println("ClientHandler.channelRead:" + msg.getClass());
         if(msg instanceof Command) {
-            ns.readCommand((Command) msg);
+            ns.readCommand(ctx, (Command) msg);
         }
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         ns.printError("error: %s%n", cause.getMessage());
-        //cause.printStackTrace();
-        //ctx.close();
+        cause.printStackTrace();
+        ctx.close();
     }
 }

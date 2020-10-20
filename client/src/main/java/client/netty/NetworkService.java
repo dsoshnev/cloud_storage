@@ -93,17 +93,16 @@ public class NetworkService {
             if (command != null) {
                 switch (command.getType()) {
                     case END:
-                        System.out.println("do end!");
+                        //System.out.println("do end!");
                         break;
                     case AUTH:
-                        System.out.println("do auth!");
+                        //System.out.println("do auth!");
                         break;
                     case UPLOAD:
                         StorageCommand sCommand = (StorageCommand) command;
-                        System.out.println("do upload!");
                         FileDecoder fileDecoder = new FileDecoder(sCommand.getLongResult1(), sCommand.getParam1());
                         ctx.pipeline().addFirst("filedecoder", fileDecoder);
-                        //ctx.writeAndFlush( CommonClientDefines.READY_FOR_CONTENT)
+                        //System.out.println("do upload!");
                         break;
                     default:
                         break;

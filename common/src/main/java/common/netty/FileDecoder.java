@@ -29,16 +29,22 @@ public class FileDecoder extends MessageToMessageDecoder<ByteBuf> {
 
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf msg, List<Object> out) throws Exception {
-        System.out.printf("bytes to read %s%n", msg.toString());
+        System.out.printf("FileDecoder:bytes to read %s%n", msg.toString());
         int bytes = msg.readableBytes();
-        receivedLength += bytes;
+        int remain = (int) (length - receivedLength);
 
-        fileChannel.write( msg.nioBuffer());
-        msg.readBytes(bytes);
-
-        if(receivedLength >= length){
+        if(remain > bytes) {
+            msg.readBytes(bytes);
+            receivedLength += bytes;
+            fileChannel.write(msg.nioBuffer(0,bytes));
+        } else {
+            msg.readBytes(remain);
+            receivedLength += remain;
+            fileChannel.write(msg.nioBuffer(0,remain));
             fileChannel.close();
             ctx.pipeline().remove("filedecoder");
+            out.add(msg.readBytes(bytes - remain));
         }
+
     }
 }

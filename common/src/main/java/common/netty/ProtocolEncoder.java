@@ -32,6 +32,6 @@ public class ProtocolEncoder extends MessageToByteEncoder<Serializable> {
         int endIdx = out.writerIndex();
 
         out.setInt(startIdx, endIdx - startIdx - 4);
-        System.out.printf("bytes to write %s:%s%n", msg.getClass().getName(), endIdx - startIdx - 4);
+        System.out.printf("ProtocolEncoder:bytes to write %s:%s%n", msg.getClass().getName(), endIdx - startIdx - 4);
     }
 }

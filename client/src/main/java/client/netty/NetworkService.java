@@ -8,9 +8,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+import org.apache.logging.log4j.*;
+
 import java.io.IOException;
 
 public class NetworkService {
+
+    private static final Logger logger = LogManager.getLogger();
 
     private final String host;
     private final int port;
@@ -21,10 +25,10 @@ public class NetworkService {
     private UserData userData;
 
     public void printInfo(String format, Object... args) {
-        System.out.printf("Client" + channel.localAddress() + ":" + format, args);
+        logger.info(String.format("Client" + channel.localAddress() + ":" + format, args));
     }
     public void printError(String format, Object... args) {
-        System.out.printf("Client" + channel.localAddress() + ":" + format, args);
+        logger.error(String.format("Client" + channel.localAddress() + ":" + format, args));
     }
 
     public NetworkService(String host, int port) {
@@ -93,17 +97,16 @@ public class NetworkService {
             if (command != null) {
                 switch (command.getType()) {
                     case END:
-                        System.out.println("do end!");
+                        //System.out.println("do end!");
                         break;
                     case AUTH:
-                        System.out.println("do auth!");
+                        //System.out.println("do auth!");
                         break;
                     case UPLOAD:
                         StorageCommand sCommand = (StorageCommand) command;
-                        System.out.println("do upload!");
                         FileDecoder fileDecoder = new FileDecoder(sCommand.getLongResult1(), sCommand.getParam1());
                         ctx.pipeline().addFirst("filedecoder", fileDecoder);
-                        //ctx.writeAndFlush( CommonClientDefines.READY_FOR_CONTENT)
+                        //System.out.println("do upload!");
                         break;
                     default:
                         break;

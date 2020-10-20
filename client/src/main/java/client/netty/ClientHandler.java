@@ -20,7 +20,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
-        System.out.println("ClientHandler.channelRead:" + msg.getClass());
+        ns.printInfo("channelRead:" + msg.getClass());
         if(msg instanceof Command) {
             ns.readCommand(ctx, (Command) msg);
         }

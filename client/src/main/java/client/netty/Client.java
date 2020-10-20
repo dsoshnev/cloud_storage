@@ -18,9 +18,9 @@ public class Client implements AutoCloseable {
     public void start(String login, String password) throws IOException, InterruptedException {
         ns.run();
         ns.sendAuthCommand(login, password);
-        //ns.sendStorageCommand(CommandType.LS, ".");
+        ns.sendStorageCommand(CommandType.LS, ".");
         ns.sendStorageCommand(CommandType.UPLOAD, login + "forUpload.txt");
-        //ns.sendStorageCommand(CommandType.DOWNLOAD, login + "forDownload.txt");
+        ns.sendStorageCommand(CommandType.DOWNLOAD, login + "forDownload.txt");
         ns.sendCommand(Command.endCommand());
         Thread.sleep(10000);
     }

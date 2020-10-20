@@ -8,9 +8,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+import org.apache.logging.log4j.*;
+
 import java.io.IOException;
 
 public class NetworkService {
+
+    private static final Logger logger = LogManager.getLogger();
 
     private final String host;
     private final int port;
@@ -21,10 +25,10 @@ public class NetworkService {
     private UserData userData;
 
     public void printInfo(String format, Object... args) {
-        System.out.printf("Client" + channel.localAddress() + ":" + format, args);
+        logger.info(String.format("Client" + channel.localAddress() + ":" + format, args));
     }
     public void printError(String format, Object... args) {
-        System.out.printf("Client" + channel.localAddress() + ":" + format, args);
+        logger.error(String.format("Client" + channel.localAddress() + ":" + format, args));
     }
 
     public NetworkService(String host, int port) {

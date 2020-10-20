@@ -840,3 +840,553 @@
 [INFO ] 2020-10-20 17:27:05.868 [nioEventLoopGroup-3-1] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0xca702902, L:/127.0.0.1:8189 - R:/127.0.0.1:50411]): Command{type='END'}
 [INFO ] 2020-10-20 17:27:05.869 [nioEventLoopGroup-3-1] LogService - client /127.0.0.1:50411 disconnected
 [DEBUG] 2020-10-20 17:27:15.839 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 4 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+[DEBUG] 2020-10-20 17:42:11.815 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:42:11.821 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:42:11.837 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:42:11.837 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:42:11.843 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:42:11.843 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:42:11.856 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:42:11.858 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:42:11.858 [main] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:42:11.859 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:42:11.860 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:42:11.860 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:42:11.861 [main] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:42:11.861 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:42:11.862 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:42:11.862 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:42:11.862 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:42:11.862 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:42:11.862 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:42:11.863 [main] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:42:11.863 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:42:11.864 [main] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:42:11.865 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:42:11.871 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[INFO ] 2020-10-20 17:42:11.888 [main] LogService - auth service is started
+[DEBUG] 2020-10-20 17:42:16.922 [main] DefaultChannelId - -Dio.netty.processId: 2615 (auto-detected)
+[DEBUG] 2020-10-20 17:42:16.926 [main] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:42:16.927 [main] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:42:16.929 [main] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:42:16.930 [main] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:42:16.934 [main] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:42:16.947 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:42:16.948 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:42:16.976 [main] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:42:16.977 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:42:16.986 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:42:16.986 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:42:16.986 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[INFO ] 2020-10-20 17:42:17.004 [main] LogService - server is started at /127.0.0.1:8189
+[DEBUG] 2020-10-20 17:42:31.670 [Thread-0] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:42:31.677 [Thread-0] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:42:31.695 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:42:31.696 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:42:31.702 [Thread-0] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:42:31.702 [Thread-0] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:42:31.715 [Thread-0] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:42:31.717 [Thread-0] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:42:31.717 [Thread-0] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:42:31.718 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:42:31.719 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:42:31.719 [Thread-0] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:42:31.720 [Thread-0] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:42:31.721 [Thread-0] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:42:31.721 [Thread-0] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:42:31.721 [Thread-0] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:42:31.721 [Thread-0] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:42:31.721 [Thread-0] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:42:31.722 [Thread-0] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:42:31.722 [Thread-0] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:42:31.723 [Thread-0] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:42:31.724 [Thread-0] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:42:31.724 [Thread-0] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:42:31.731 [Thread-0] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2020-10-20 17:42:36.771 [Thread-0] DefaultChannelId - -Dio.netty.processId: 2619 (auto-detected)
+[DEBUG] 2020-10-20 17:42:36.776 [Thread-0] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:42:36.776 [Thread-0] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:42:36.780 [Thread-0] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:42:36.780 [Thread-0] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:42:36.784 [Thread-0] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:42:36.798 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:42:36.798 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:42:36.825 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:42:36.825 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:42:36.825 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:42:36.826 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:42:36.827 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:42:36.827 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:42:36.827 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:42:36.835 [Thread-0] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:42:36.835 [Thread-0] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:42:36.836 [Thread-0] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2020-10-20 17:42:36.879 [Thread-0] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:42:36.879 [Thread-0] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:42:36.879 [Thread-0] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:42:36.880 [Thread-0] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:42:36.880 [Thread-0] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[INFO ] 2020-10-20 17:42:36.897 [nioEventLoopGroup-3-1] LogService - client /127.0.0.1:50716 connected
+[DEBUG] 2020-10-20 17:42:36.895 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:42:36.900 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:42:36.901 [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b699357
+[INFO ] 2020-10-20 17:42:36.920 [nioEventLoopGroup-2-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:42:36.928 [nioEventLoopGroup-2-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:42:36.929 [nioEventLoopGroup-2-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[DEBUG] 2020-10-20 17:42:36.929 [nioEventLoopGroup-3-1] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:42:36.929 [nioEventLoopGroup-3-1] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:42:36.929 [nioEventLoopGroup-3-1] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:42:36.930 [nioEventLoopGroup-3-1] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:42:36.930 [nioEventLoopGroup-3-1] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[DEBUG] 2020-10-20 17:42:36.938 [nioEventLoopGroup-3-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:42:36.938 [nioEventLoopGroup-3-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:42:36.940 [nioEventLoopGroup-3-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6d3beee1
+[INFO ] 2020-10-20 17:42:36.951 [nioEventLoopGroup-3-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 797, cap: 1024)
+[INFO ] 2020-10-20 17:42:36.999 [nioEventLoopGroup-3-1] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:42:37.006 [nioEventLoopGroup-3-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:42:37.011 [nioEventLoopGroup-3-1] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:42:37.011 [nioEventLoopGroup-3-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 341, widx: 797, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.017 [nioEventLoopGroup-3-1] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:42:37.018 [nioEventLoopGroup-3-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:42:37.019 [nioEventLoopGroup-3-1] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+[INFO ] 2020-10-20 17:42:37.030 [nioEventLoopGroup-2-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 341, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.049 [nioEventLoopGroup-2-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.056 [nioEventLoopGroup-3-1] LogService - send file: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): server/data/login1/login1forUpload.txt
+[INFO ] 2020-10-20 17:42:37.057 [nioEventLoopGroup-3-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 658, widx: 797, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.058 [nioEventLoopGroup-2-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.058 [nioEventLoopGroup-3-1] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): Command{type='END'}
+[INFO ] 2020-10-20 17:42:37.059 [nioEventLoopGroup-2-1] FileDecoder - FileDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 16384, cap: 16384)
+[INFO ] 2020-10-20 17:42:37.061 [nioEventLoopGroup-3-1] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:42:37.061 [nioEventLoopGroup-3-1] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0xce7fa728, L:/127.0.0.1:8189 - R:/127.0.0.1:50716]): Command{type='END'}
+[INFO ] 2020-10-20 17:42:37.062 [nioEventLoopGroup-2-1] FileDecoder - FileDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 25591, cap: 65536)
+[INFO ] 2020-10-20 17:42:37.065 [nioEventLoopGroup-3-1] LogService - client /127.0.0.1:50716 disconnected
+[INFO ] 2020-10-20 17:42:37.068 [nioEventLoopGroup-2-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:42:37.068 [nioEventLoopGroup-2-1] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[DEBUG] 2020-10-20 17:42:46.902 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 4 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+[DEBUG] 2020-10-20 17:47:31.386 [Thread-0] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:47:31.393 [Thread-0] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:47:31.408 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:47:31.408 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:47:31.414 [Thread-0] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:47:31.414 [Thread-0] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:47:31.428 [Thread-0] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:47:31.429 [Thread-0] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:47:31.430 [Thread-0] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:47:31.431 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:47:31.431 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:47:31.432 [Thread-0] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:47:31.433 [Thread-0] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:47:31.434 [Thread-0] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:47:31.434 [Thread-0] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:47:31.434 [Thread-0] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:47:31.434 [Thread-0] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:47:31.435 [Thread-0] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:47:31.435 [Thread-0] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:47:31.436 [Thread-0] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:47:31.436 [Thread-0] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:47:31.437 [Thread-0] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:47:31.437 [Thread-0] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:47:31.444 [Thread-0] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2020-10-20 17:47:36.483 [Thread-0] DefaultChannelId - -Dio.netty.processId: 2660 (auto-detected)
+[DEBUG] 2020-10-20 17:47:36.488 [Thread-0] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:47:36.488 [Thread-0] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:47:36.491 [Thread-0] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:47:36.492 [Thread-0] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:47:36.497 [Thread-0] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:47:36.513 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:47:36.514 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:47:36.553 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:47:36.553 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:47:36.553 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:47:36.554 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:47:36.554 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:47:36.554 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:47:36.554 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:47:36.554 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:47:36.555 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:47:36.555 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:47:36.555 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:47:36.555 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:47:36.556 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:47:36.566 [Thread-0] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:47:36.566 [Thread-0] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:47:36.567 [Thread-0] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[INFO ] 2020-10-20 17:47:36.623 [nioEventLoopGroup-3-2] LogService - client /127.0.0.1:50740 connected
+[DEBUG] 2020-10-20 17:47:36.635 [Thread-0] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:47:36.636 [Thread-0] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:47:36.636 [Thread-0] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:47:36.636 [Thread-0] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:47:36.636 [Thread-0] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[INFO ] 2020-10-20 17:47:36.642 [Thread-0] NetworkService - Client/127.0.0.1:50740:send: %s%n
+[INFO ] 2020-10-20 17:47:36.647 [Thread-0] NetworkService - Client/127.0.0.1:50740:send: %s%n
+[INFO ] 2020-10-20 17:47:36.648 [Thread-0] NetworkService - Client/127.0.0.1:50740:send: %s%n
+[INFO ] 2020-10-20 17:47:36.648 [Thread-0] NetworkService - Client/127.0.0.1:50740:send: %s%n
+[INFO ] 2020-10-20 17:47:36.648 [Thread-0] NetworkService - Client/127.0.0.1:50740:send: %s%n
+[DEBUG] 2020-10-20 17:47:36.662 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:47:36.664 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:47:36.666 [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1607b4df
+[INFO ] 2020-10-20 17:47:36.690 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:47:36.698 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 341, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.700 [nioEventLoopGroup-3-2] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:47:36.701 [nioEventLoopGroup-3-2] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:47:36.702 [nioEventLoopGroup-3-2] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:47:36.706 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:47:36.708 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 295, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.708 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:47:36.710 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:47:36.712 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:47:36.712 [nioEventLoopGroup-3-2] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): StorageCommand{type='LS'params='[., ]'results='[]'}
+[INFO ] 2020-10-20 17:47:36.719 [nioEventLoopGroup-3-2] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:47:36.721 [nioEventLoopGroup-3-2] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): StorageCommand{type='LS'params='[., ]'results='[login1forUpload.txt]'}
+[INFO ] 2020-10-20 17:47:36.721 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 512, cap: 512)
+[INFO ] 2020-10-20 17:47:36.723 [nioEventLoopGroup-3-2] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:47:36.725 [nioEventLoopGroup-3-2] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:47:36.725 [nioEventLoopGroup-3-2] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+[INFO ] 2020-10-20 17:47:36.790 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 658, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.798 [nioEventLoopGroup-3-2] LogService - send file: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): server/data/login1/login1forUpload.txt
+[INFO ] 2020-10-20 17:47:36.798 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 317, widx: 512, cap: 512)
+[INFO ] 2020-10-20 17:47:36.801 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 317, widx: 777, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.805 [nioEventLoopGroup-3-2] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): StorageCommand{type='DOWNLOAD'params='[login1forDownload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:47:36.808 [nioEventLoopGroup-3-2] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:47:36.809 [nioEventLoopGroup-3-2] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): ErrorCommand{error='command not supported'}
+[INFO ] 2020-10-20 17:47:36.809 [nioEventLoopGroup-3-2] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 638, widx: 777, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.810 [nioEventLoopGroup-3-2] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): Command{type='END'}
+[INFO ] 2020-10-20 17:47:36.811 [nioEventLoopGroup-3-2] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:47:36.811 [nioEventLoopGroup-3-2] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x5dee4e41, L:/127.0.0.1:8189 - R:/127.0.0.1:50740]): Command{type='END'}
+[INFO ] 2020-10-20 17:47:36.812 [nioEventLoopGroup-3-2] LogService - client /127.0.0.1:50740 disconnected
+[INFO ] 2020-10-20 17:47:36.813 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:channelRead:class common.AuthCommand
+[INFO ] 2020-10-20 17:47:36.814 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:read: %s%n
+[INFO ] 2020-10-20 17:47:36.815 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 341, widx: 658, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.818 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:47:36.818 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:read: %s%n
+[INFO ] 2020-10-20 17:47:36.818 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.820 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:47:36.821 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50740:read: %s%n
+[INFO ] 2020-10-20 17:47:36.824 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.824 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 16384, cap: 16384)
+[INFO ] 2020-10-20 17:47:36.825 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 25819, cap: 65536)
+[INFO ] 2020-10-20 17:47:36.829 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:47:36.830 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 325, widx: 1024, cap: 1024)
+[DEBUG] 2020-10-20 17:47:46.670 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 4 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+[DEBUG] 2020-10-20 17:49:34.090 [Thread-0] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:49:34.096 [Thread-0] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:49:34.113 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:49:34.113 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:49:34.119 [Thread-0] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:49:34.119 [Thread-0] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:49:34.135 [Thread-0] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:49:34.137 [Thread-0] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:49:34.137 [Thread-0] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:49:34.139 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:49:34.139 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:49:34.140 [Thread-0] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:49:34.141 [Thread-0] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:49:34.141 [Thread-0] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:49:34.142 [Thread-0] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:49:34.142 [Thread-0] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:49:34.142 [Thread-0] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:49:34.142 [Thread-0] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:49:34.143 [Thread-0] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:49:34.143 [Thread-0] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:49:34.144 [Thread-0] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:49:34.145 [Thread-0] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:49:34.145 [Thread-0] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:49:34.152 [Thread-0] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2020-10-20 17:49:39.199 [Thread-0] DefaultChannelId - -Dio.netty.processId: 2682 (auto-detected)
+[DEBUG] 2020-10-20 17:49:39.204 [Thread-0] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:49:39.204 [Thread-0] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:49:39.207 [Thread-0] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:49:39.208 [Thread-0] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:49:39.212 [Thread-0] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:49:39.226 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:49:39.226 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:49:39.253 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:49:39.253 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:49:39.253 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:49:39.254 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:49:39.255 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:49:39.255 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:49:39.255 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:49:39.263 [Thread-0] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:49:39.263 [Thread-0] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:49:39.263 [Thread-0] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[INFO ] 2020-10-20 17:49:39.294 [nioEventLoopGroup-3-3] LogService - client /127.0.0.1:50752 connected
+[DEBUG] 2020-10-20 17:49:39.301 [Thread-0] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:49:39.302 [Thread-0] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:49:39.302 [Thread-0] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:49:39.302 [Thread-0] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:49:39.302 [Thread-0] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[INFO ] 2020-10-20 17:49:39.305 [Thread-0] NetworkService - Client/127.0.0.1:50752:send: %s%n
+[INFO ] 2020-10-20 17:49:39.308 [Thread-0] NetworkService - Client/127.0.0.1:50752:send: %s%n
+[INFO ] 2020-10-20 17:49:39.309 [Thread-0] NetworkService - Client/127.0.0.1:50752:send: %s%n
+[DEBUG] 2020-10-20 17:49:39.317 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:49:39.318 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:49:39.320 [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3d68416c
+[INFO ] 2020-10-20 17:49:39.337 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:49:39.341 [nioEventLoopGroup-3-3] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 341, cap: 1024)
+[INFO ] 2020-10-20 17:49:39.342 [nioEventLoopGroup-3-3] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:49:39.343 [nioEventLoopGroup-3-3] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:49:39.343 [nioEventLoopGroup-3-3] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:49:39.345 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:49:39.345 [nioEventLoopGroup-3-3] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 317, cap: 1024)
+[INFO ] 2020-10-20 17:49:39.345 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:49:39.347 [nioEventLoopGroup-3-3] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:49:39.347 [nioEventLoopGroup-3-3] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:49:39.348 [nioEventLoopGroup-3-3] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+[INFO ] 2020-10-20 17:49:39.360 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 666, cap: 1024)
+[INFO ] 2020-10-20 17:49:39.369 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:channelRead:class common.AuthCommand
+[INFO ] 2020-10-20 17:49:39.369 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:read: %s%n
+[INFO ] 2020-10-20 17:49:39.370 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 341, widx: 666, cap: 1024)
+[INFO ] 2020-10-20 17:49:39.372 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:49:39.372 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:read: %s%n
+[INFO ] 2020-10-20 17:49:39.375 [nioEventLoopGroup-3-3] LogService - send file: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): server/data/login1/login1forUpload.txt
+[INFO ] 2020-10-20 17:49:39.375 [nioEventLoopGroup-3-3] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 139, cap: 512)
+[INFO ] 2020-10-20 17:49:39.375 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:49:39.376 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 16384, cap: 16384)
+[INFO ] 2020-10-20 17:49:39.376 [nioEventLoopGroup-3-3] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): Command{type='END'}
+[INFO ] 2020-10-20 17:49:39.376 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 25127, cap: 65536)
+[INFO ] 2020-10-20 17:49:39.376 [nioEventLoopGroup-3-3] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:49:39.377 [nioEventLoopGroup-3-3] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x3a325180, L:/127.0.0.1:8189 - R:/127.0.0.1:50752]): Command{type='END'}
+[INFO ] 2020-10-20 17:49:39.377 [nioEventLoopGroup-3-3] LogService - client /127.0.0.1:50752 disconnected
+[INFO ] 2020-10-20 17:49:39.379 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 139, cap: 65536)
+[INFO ] 2020-10-20 17:49:39.379 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:channelRead:class common.Command
+[INFO ] 2020-10-20 17:49:39.379 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50752:read: %s%n
+[DEBUG] 2020-10-20 17:49:49.328 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 4 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+[DEBUG] 2020-10-20 17:51:13.519 [Thread-0] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:51:13.525 [Thread-0] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:51:13.541 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:51:13.542 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:51:13.548 [Thread-0] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:51:13.548 [Thread-0] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:51:13.562 [Thread-0] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:51:13.564 [Thread-0] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:51:13.564 [Thread-0] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:51:13.565 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:51:13.566 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:51:13.566 [Thread-0] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:51:13.567 [Thread-0] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:51:13.568 [Thread-0] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:51:13.568 [Thread-0] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:51:13.568 [Thread-0] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:51:13.568 [Thread-0] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:51:13.569 [Thread-0] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:51:13.569 [Thread-0] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:51:13.570 [Thread-0] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:51:13.570 [Thread-0] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:51:13.571 [Thread-0] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:51:13.572 [Thread-0] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:51:13.580 [Thread-0] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2020-10-20 17:51:18.626 [Thread-0] DefaultChannelId - -Dio.netty.processId: 2806 (auto-detected)
+[DEBUG] 2020-10-20 17:51:18.631 [Thread-0] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:51:18.631 [Thread-0] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:51:18.634 [Thread-0] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:51:18.635 [Thread-0] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:51:18.639 [Thread-0] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:51:18.653 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:51:18.654 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:51:18.681 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:51:18.681 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:51:18.681 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:51:18.681 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:51:18.682 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:51:18.683 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:51:18.683 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:51:18.691 [Thread-0] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:51:18.691 [Thread-0] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:51:18.691 [Thread-0] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[INFO ] 2020-10-20 17:51:18.728 [nioEventLoopGroup-3-4] LogService - client /127.0.0.1:50766 connected
+[DEBUG] 2020-10-20 17:51:18.736 [Thread-0] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:51:18.736 [Thread-0] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:51:18.736 [Thread-0] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:51:18.736 [Thread-0] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:51:18.736 [Thread-0] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[INFO ] 2020-10-20 17:51:18.739 [Thread-0] NetworkService - Client/127.0.0.1:50766:send: AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+
+[INFO ] 2020-10-20 17:51:18.742 [Thread-0] NetworkService - Client/127.0.0.1:50766:send: StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+
+[INFO ] 2020-10-20 17:51:18.743 [Thread-0] NetworkService - Client/127.0.0.1:50766:send: Command{type='END'}
+
+[DEBUG] 2020-10-20 17:51:18.752 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:51:18.753 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:51:18.754 [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3d68416c
+[INFO ] 2020-10-20 17:51:18.772 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:18.776 [nioEventLoopGroup-3-4] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 341, cap: 1024)
+[INFO ] 2020-10-20 17:51:18.777 [nioEventLoopGroup-3-4] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:51:18.778 [nioEventLoopGroup-3-4] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:18.778 [nioEventLoopGroup-3-4] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:51:18.780 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:18.780 [nioEventLoopGroup-3-4] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 317, cap: 1024)
+[INFO ] 2020-10-20 17:51:18.780 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:18.782 [nioEventLoopGroup-3-4] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:51:18.782 [nioEventLoopGroup-3-4] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:18.783 [nioEventLoopGroup-3-4] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+[INFO ] 2020-10-20 17:51:18.796 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 666, cap: 1024)
+[INFO ] 2020-10-20 17:51:18.805 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:channelRead:class common.AuthCommand
+[INFO ] 2020-10-20 17:51:18.805 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:read: AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+
+[INFO ] 2020-10-20 17:51:18.806 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 341, widx: 666, cap: 1024)
+[INFO ] 2020-10-20 17:51:18.808 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:51:18.808 [nioEventLoopGroup-3-4] LogService - send file: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): server/data/login1/login1forUpload.txt
+[INFO ] 2020-10-20 17:51:18.808 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:read: StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+
+[INFO ] 2020-10-20 17:51:18.809 [nioEventLoopGroup-3-4] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 139, cap: 512)
+[INFO ] 2020-10-20 17:51:18.810 [nioEventLoopGroup-3-4] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): Command{type='END'}
+[INFO ] 2020-10-20 17:51:18.810 [nioEventLoopGroup-3-4] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:18.810 [nioEventLoopGroup-3-4] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x021034f9, L:/127.0.0.1:8189 - R:/127.0.0.1:50766]): Command{type='END'}
+[INFO ] 2020-10-20 17:51:18.811 [nioEventLoopGroup-3-4] LogService - client /127.0.0.1:50766 disconnected
+[INFO ] 2020-10-20 17:51:18.812 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:51:18.812 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 16384, cap: 16384)
+[INFO ] 2020-10-20 17:51:18.813 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 25266, cap: 65536)
+[INFO ] 2020-10-20 17:51:18.815 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 139, cap: 139)
+[INFO ] 2020-10-20 17:51:18.816 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:channelRead:class common.Command
+[INFO ] 2020-10-20 17:51:18.816 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50766:read: Command{type='END'}
+
+[DEBUG] 2020-10-20 17:51:28.750 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 5 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+[DEBUG] 2020-10-20 17:51:41.903 [Thread-0] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2020-10-20 17:51:41.910 [Thread-0] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2020-10-20 17:51:41.927 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2020-10-20 17:51:41.927 [Thread-0] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2020-10-20 17:51:41.934 [Thread-0] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2020-10-20 17:51:41.934 [Thread-0] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2020-10-20 17:51:41.947 [Thread-0] PlatformDependent - Platform: MacOS
+[DEBUG] 2020-10-20 17:51:41.949 [Thread-0] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2020-10-20 17:51:41.949 [Thread-0] PlatformDependent0 - Java version: 8
+[DEBUG] 2020-10-20 17:51:41.950 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2020-10-20 17:51:41.951 [Thread-0] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2020-10-20 17:51:41.952 [Thread-0] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2020-10-20 17:51:41.952 [Thread-0] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2020-10-20 17:51:41.953 [Thread-0] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2020-10-20 17:51:41.953 [Thread-0] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2020-10-20 17:51:41.953 [Thread-0] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2020-10-20 17:51:41.953 [Thread-0] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2020-10-20 17:51:41.954 [Thread-0] PlatformDependent - -Dio.netty.tmpdir: /var/folders/gx/st9x_73j47z0zv615f8bxh_80000gn/T (java.io.tmpdir)
+[DEBUG] 2020-10-20 17:51:41.954 [Thread-0] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2020-10-20 17:51:41.955 [Thread-0] PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+[DEBUG] 2020-10-20 17:51:41.955 [Thread-0] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2020-10-20 17:51:41.956 [Thread-0] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2020-10-20 17:51:41.957 [Thread-0] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2020-10-20 17:51:41.964 [Thread-0] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2020-10-20 17:51:47.009 [Thread-0] DefaultChannelId - -Dio.netty.processId: 2815 (auto-detected)
+[DEBUG] 2020-10-20 17:51:47.013 [Thread-0] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2020-10-20 17:51:47.014 [Thread-0] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2020-10-20 17:51:47.017 [Thread-0] NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2020-10-20 17:51:47.018 [Thread-0] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2020-10-20 17:51:47.022 [Thread-0] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2020-10-20 17:51:47.036 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2020-10-20 17:51:47.036 [Thread-0] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2020-10-20 17:51:47.063 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2020-10-20 17:51:47.063 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2020-10-20 17:51:47.063 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2020-10-20 17:51:47.063 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2020-10-20 17:51:47.063 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2020-10-20 17:51:47.064 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2020-10-20 17:51:47.065 [Thread-0] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2020-10-20 17:51:47.073 [Thread-0] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2020-10-20 17:51:47.073 [Thread-0] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2020-10-20 17:51:47.073 [Thread-0] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[INFO ] 2020-10-20 17:51:47.108 [nioEventLoopGroup-3-5] LogService - client /127.0.0.1:50770 connected
+[DEBUG] 2020-10-20 17:51:47.118 [Thread-0] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2020-10-20 17:51:47.119 [Thread-0] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2020-10-20 17:51:47.119 [Thread-0] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2020-10-20 17:51:47.119 [Thread-0] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2020-10-20 17:51:47.119 [Thread-0] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[INFO ] 2020-10-20 17:51:47.122 [Thread-0] NetworkService - Client/127.0.0.1:50770:send: AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+
+[INFO ] 2020-10-20 17:51:47.125 [Thread-0] NetworkService - Client/127.0.0.1:50770:send: StorageCommand{type='LS'params='[., ]'results='[]'}
+
+[INFO ] 2020-10-20 17:51:47.126 [Thread-0] NetworkService - Client/127.0.0.1:50770:send: StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+
+[INFO ] 2020-10-20 17:51:47.126 [Thread-0] NetworkService - Client/127.0.0.1:50770:send: StorageCommand{type='DOWNLOAD'params='[login1forDownload.txt, ]'results='[]'}
+
+[INFO ] 2020-10-20 17:51:47.126 [Thread-0] NetworkService - Client/127.0.0.1:50770:send: Command{type='END'}
+
+[DEBUG] 2020-10-20 17:51:47.135 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2020-10-20 17:51:47.137 [nioEventLoopGroup-2-1] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2020-10-20 17:51:47.138 [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@657a90e0
+[INFO ] 2020-10-20 17:51:47.156 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:47.160 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 341, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.161 [nioEventLoopGroup-3-5] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:51:47.161 [nioEventLoopGroup-3-5] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:47.162 [nioEventLoopGroup-3-5] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+[INFO ] 2020-10-20 17:51:47.164 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:47.165 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 295, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.165 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:47.165 [nioEventLoopGroup-3-5] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): StorageCommand{type='LS'params='[., ]'results='[]'}
+[INFO ] 2020-10-20 17:51:47.166 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:47.166 [nioEventLoopGroup-3-5] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:47.166 [nioEventLoopGroup-2-1] ProtocolEncoder - bytes to write 
+[INFO ] 2020-10-20 17:51:47.167 [nioEventLoopGroup-3-5] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): StorageCommand{type='LS'params='[., ]'results='[login1forUpload.txt]'}
+[INFO ] 2020-10-20 17:51:47.167 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 512, cap: 512)
+[INFO ] 2020-10-20 17:51:47.168 [nioEventLoopGroup-3-5] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:51:47.169 [nioEventLoopGroup-3-5] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:47.169 [nioEventLoopGroup-3-5] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+[INFO ] 2020-10-20 17:51:47.179 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 983, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.189 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:channelRead:class common.AuthCommand
+[INFO ] 2020-10-20 17:51:47.189 [nioEventLoopGroup-3-5] LogService - send file: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): server/data/login1/login1forUpload.txt
+[INFO ] 2020-10-20 17:51:47.189 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 317, widx: 512, cap: 512)
+[INFO ] 2020-10-20 17:51:47.190 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:read: AuthCommand{userData='UserData{login='login1', password='***', username='null', homeDir='/login1/'}'}
+
+[INFO ] 2020-10-20 17:51:47.190 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 317, widx: 777, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.191 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 341, widx: 983, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.191 [nioEventLoopGroup-3-5] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): StorageCommand{type='DOWNLOAD'params='[login1forDownload.txt, ]'results='[]'}
+[INFO ] 2020-10-20 17:51:47.191 [nioEventLoopGroup-3-5] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:47.192 [nioEventLoopGroup-3-5] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): ErrorCommand{error='command not supported'}
+[INFO ] 2020-10-20 17:51:47.192 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:51:47.193 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:read: StorageCommand{type='LS'params='[., ]'results='[login1forUpload.txt]'}
+
+[INFO ] 2020-10-20 17:51:47.193 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 658, widx: 983, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.195 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:channelRead:class common.StorageCommand
+[INFO ] 2020-10-20 17:51:47.195 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:read: StorageCommand{type='UPLOAD'params='[login1forUpload.txt, ]'results='[42535]'}
+
+[INFO ] 2020-10-20 17:51:47.196 [nioEventLoopGroup-3-5] ProtocolDecoder - ProtocolDecoder:bytes to read PooledUnsafeDirectByteBuf(ridx: 638, widx: 777, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.196 [nioEventLoopGroup-3-5] LogService - read: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): Command{type='END'}
+[INFO ] 2020-10-20 17:51:47.197 [nioEventLoopGroup-3-5] ProtocolEncoder - ProtocolEncoder:bytes to write 
+[INFO ] 2020-10-20 17:51:47.197 [nioEventLoopGroup-3-5] LogService - send: ChannelHandlerContext(ServerHandler#0, [id: 0x63efd273, L:/127.0.0.1:8189 - R:/127.0.0.1:50770]): Command{type='END'}
+[INFO ] 2020-10-20 17:51:47.197 [nioEventLoopGroup-3-5] LogService - client /127.0.0.1:50770 disconnected
+[INFO ] 2020-10-20 17:51:47.199 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 1024, cap: 1024)
+[INFO ] 2020-10-20 17:51:47.199 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 16384, cap: 16384)
+[INFO ] 2020-10-20 17:51:47.199 [nioEventLoopGroup-2-1] FileDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 25494, cap: 65536)
+[INFO ] 2020-10-20 17:51:47.202 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 0, widx: 367, cap: 367)
+[INFO ] 2020-10-20 17:51:47.203 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:channelRead:class common.ErrorCommand
+[INFO ] 2020-10-20 17:51:47.204 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:read: ErrorCommand{error='command not supported'}
+
+[INFO ] 2020-10-20 17:51:47.204 [nioEventLoopGroup-2-1] ProtocolDecoder - bytes to read PooledUnsafeDirectByteBuf(ridx: 228, widx: 367, cap: 367)
+[INFO ] 2020-10-20 17:51:47.204 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:channelRead:class common.Command
+[INFO ] 2020-10-20 17:51:47.205 [nioEventLoopGroup-2-1] NetworkService - Client/127.0.0.1:50770:read: Command{type='END'}
+
+[DEBUG] 2020-10-20 17:51:57.148 [nioEventLoopGroup-2-1] PoolThreadCache - Freed 5 thread-local buffer(s) from thread: nioEventLoopGroup-2-1

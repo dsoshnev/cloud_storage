@@ -4,9 +4,13 @@ import io.netty.buffer.*;
 import io.netty.channel.*;
 import io.netty.handler.codec.*;
 
+import org.apache.logging.log4j.*;
+
 import java.io.ObjectInputStream;
 
 public class ProtocolDecoder extends LengthFieldBasedFrameDecoder {
+
+    private static final Logger logger = LogManager.getLogger();
 
     public ProtocolDecoder() {
         //this(1048576);
@@ -19,7 +23,7 @@ public class ProtocolDecoder extends LengthFieldBasedFrameDecoder {
 
     @Override
     protected Object decode(ChannelHandlerContext ctx, ByteBuf in) throws Exception {
-        System.out.printf("ProtocolDecoder:bytes to read %s%n", in.toString());
+        logger.info("bytes to read " + in.toString());
         ByteBuf frame = (ByteBuf) super.decode(ctx, in);
         if (frame == null) {
             return null;

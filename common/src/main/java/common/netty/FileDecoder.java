@@ -4,6 +4,8 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
 
+import org.apache.logging.log4j.*;
+
 import java.io.IOException;
 import java.nio.channels.FileChannel;
 import java.nio.file.Path;
@@ -12,6 +14,8 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class FileDecoder extends MessageToMessageDecoder<ByteBuf> {
+
+    private static final Logger logger = LogManager.getLogger();
 
     private final String name;
     private final long length;
@@ -29,7 +33,7 @@ public class FileDecoder extends MessageToMessageDecoder<ByteBuf> {
 
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf msg, List<Object> out) throws Exception {
-        System.out.printf("FileDecoder:bytes to read %s%n", msg.toString());
+        logger.info("bytes to read " + msg.toString());
         int bytes = msg.readableBytes();
         int remain = (int) (length - receivedLength);
 

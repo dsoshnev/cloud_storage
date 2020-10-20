@@ -18,10 +18,11 @@ public class Client implements AutoCloseable {
     public void start(String login, String password) throws IOException, InterruptedException {
         ns.run();
         ns.sendAuthCommand(login, password);
-        ns.sendStorageCommand(CommandType.LS, ".");
+        //ns.sendStorageCommand(CommandType.LS, ".");
         ns.sendStorageCommand(CommandType.UPLOAD, login + "forUpload.txt");
-        ns.sendStorageCommand(CommandType.DOWNLOAD, login + "forDownload.txt");
+        //ns.sendStorageCommand(CommandType.DOWNLOAD, login + "forDownload.txt");
         ns.sendCommand(Command.endCommand());
+        Thread.sleep(10000);
     }
 
     @Override
@@ -41,7 +42,7 @@ public class Client implements AutoCloseable {
                 e.printStackTrace();
             }
         }).start();
-
+        /*
         new Thread(() -> {
             try (Client client = new Client(DEFAULT_HOST, DEFAULT_PORT)) {
                 client.start("login2", "pass2");
@@ -57,6 +58,6 @@ public class Client implements AutoCloseable {
                 e.printStackTrace();
             }
         }).start();
-
+        */
     }
 }
